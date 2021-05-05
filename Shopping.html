@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping PainTings</title>
+    <link href="StyleShopping.css" type="text/css" rel="StyleSheet">
+    <link href="JS/Products.js" type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div class="container" ng-controller="myController">
+        <div class="main">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><strong>Trang Chủ</strong></a></li>
+                    <li><a href="SlideShow.html"><strong>SlideShow</strong></a></li>
+                    <li><a href="FormDangKi.html"><strong>Đăng Kí</strong></a></li>
+                    <li><a href="Shopping.html"><strong>Mua Tranh</strong></a></li>
+                </ul>
+            </div>
+            <div class="Search">
+            <div class=FilterBy><strong>Tìm Kiếm :</strong></div>
+            <input type='text' name='listFilter' ng-model="search">
+            <div class="InsertSearch">
+                <h4>Giá Trị Tìm Kiếm : {{search}}</h4>
+            </div>
+        <div class="filtersortby">
+            <strong id="contentSortBy">Sắp Xếp Theo :</strong>
+            <select ng-model="sortColumn">
+                <option value="Name">Sắp xếp Tên Sản Phẩm</option>
+                <option value="DonGia">Sắp xếp theo Đơn Giá Tăng Dần</option>
+                <option value="ID">Sắp Xếp Theo ID</option>
+            </select>
+            <strong>Mức Giá :</strong>
+            <select ng-model='Money' ng-model="filter">
+                <option value="2000000">Lớn hơn 2.000.000 Triệu Đồng</option>
+                <option value="3000000">Lớn hơn 3.000.000 Triệu Đồng </option>
+                <option value="4000000">Lớn hơn 4.000.000 Triệu Đồng </option>
+                <option value="5000000">Lớn hơn 5.000.000 Triệu Đồng</option> 
+            </select><hr>
+        </div>
+            </div>
+            <div class="ThanhToan" ng-show="IsDisPlay">
+                <div class="Total" ng-value="valueMoney"><strong>Tổng Tiền</strong><br>{{tinhTongTien()}} VNĐ</div>
+                <div class="DatHang" ng-click="clickMe()"><strong>ĐẶT HÀNG</strong></div>
+            </div>
+        <div class="leftbody">
+            <div class="row">
+                <div class="column" ng-repeat='p in products|filter:search|orderBy:sortColumn|searchMoney:Money'>
+                    <img src="{{p.Image}}" width="350" height="525.5">
+                    <p id="money"><strong>{{p['Money']}}</strong></p>
+                    <p id="name" filter='searchName'><strong>{{p['Name']}} - ID: {{p['ID']}}<strong></p>
+                    <input id="CheckItems"  type="checkbox" ng-model='p.isBuy' ng-click="click(IsDisPlay)" ><br>
+                    <strong style="margin-left: 5px;font-size: 25px;color: white;">XÁC NHẬN MUA SẢN PHẨM</strong>
+                    <div><input style="margin-left: 90px;border-radius: 5px;" type="number" ng-model='p.SoLuong' ng-disabled='!p.isBuy' min="0"></div><br>
+                    <div style="color: white;text-align: center;">{{p.Money}}</div><br>
+                    <div style="text-align: center;color: white;"> Thành Tiền : {{p.SoLuong*p.DonGia}} VNĐ</div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="footer">
+        <p class="CopyRight">&emsp;© 2020 OFFICAL SHOPPING PAINTINGS TEMPLATE. All RIGHTS RESERVED | DESIGN FORM BY <a href="https://www.facebook.com/nhatphong.faker">Dương Tấn Nhật Phong - PS11601</a>&emsp;</p>
+    </div>
+</footer>
+<script src="JS/Products.js"></script>
+</html>

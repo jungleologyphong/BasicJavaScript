@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="StyleFormDangKi.css" type="text/css" rel="StyleSheet">  
+    <link href="JS/JavascriptCheckDangKi.js" type="text/javascript" rel="StyleSheet">  
+    <title>SIGNUP FORM | DESIGN BY NHAT PHONG</title>
+</head>
+<body>
+<img class="background2" src="images/backgroundsignup2.jpg">
+<h1 class="Content">OFFICIAL<br> SIGNUP FORM</h1>
+<div class="trangchu">
+    <a href="index.html">Trang Chủ</a>
+</div>
+<div class="slideshow">
+    <a href="SlideShow.html">Slide Show</a>
+</div>
+<div class="shopping">
+    <a href="Shopping.html">Mua Tranh</a>
+</div>
+<div class="container">
+    <div class="main">
+        <div class="main-form">
+            <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
+            <Form onsubmit=" return CheckForm(Check)">
+            <div class="MaSinhVien">
+                <input type="text" id="MaSinhVien" placeholder="Mã Sinh Viên"><br>        
+            </div>
+            <p class="CheckMa1" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * MÃ SINH VIÊN KHÔNG ĐƯỢC BỎ TRỐNG !!!
+            </p>
+            <p class="CheckMa2" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * MÃ SINH VIÊN KHÔNG HỢP LỆ !!!
+            </p>
+            <div class="HoVaTen">   
+                <input type="text" id="HoVaTen" placeholder="Họ và Tên"><br>
+            </div>
+            <p class="CheckTen1" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * TÊN SINH VIÊN KHÔNG ĐƯỢC BỎ TRỐNG !!!
+            </p>
+            <p class="CheckTen2" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * TÊN SINH VIÊN KHÔNG HỢP LỆ !!!
+            </p>
+            <div class="Email">
+                <input type="text" id="Email" placeholder="abcd@nameproduct.com"><br>
+            </div>
+            <p class="ThongBaoEmail" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * ĐỊNH DẠNG EMAIL NHẬP VÀO KHÔNG HỢP LỆ !!!
+            </p>
+            <div class="Gender">
+                <label><strong>Giới Tính :</strong></label><br>
+                <input id="GenDer" type="radio" name="Sex" value="Femal"> Nam  
+                <input id="GenDer" type="radio" name="Sex" value="Male"> Nữ
+            </div>
+            <p class="Sex" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * XIN MỜI CHỌN GIỚI TÍNH !!!
+            </p>
+            <div class="SoThich">
+            <label><strong>Sở Thích :</strong></label><br>
+            <input type="checkbox" name="SoThich"> Đọc Sách 
+            <input type="checkbox" name="SoThich"> Du Lịch
+            <input type="checkbox" name="SoThich"> Âm Nhạc
+            <input type="checkbox" name="SoThich"> Ẩm Thực
+            <input type="checkbox" name="SoThich"> Khác
+            </div>
+            <p class="ThongBaoSoThich" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * XIN MỜI CHỌN MỘT HOẶC NHIỀU SỞ THÍCH !!!
+            </p>
+            <div class="National">
+                <label><strong>Quốc Tịch :</strong></label><br>
+                <select id="National">
+                    <option>----------------------------- Chọn Quốc Tịch ------------------------------</option>
+                    <option name="nationality">Việt Nam</option>
+                    <option name="nationality">Trung Quốc</option>
+                    <option name="nationality">Ả Rập Xê Út</option> 
+                    <option name="nationality">Afghanistan</option>
+                    <option name="nationality">Ai Cập</option> 
+                    <option name="nationality">Albania</option> 
+                    <option name="nationality">Algeria</option> 
+                    <option name="nationality">Ấn Độ</option> 
+                    <option name="nationality">Angola</option> 
+                    <option name="nationality">Antigua và Barbuda</option>
+                    <option name="nationality">Áo</option> 
+                    <option name="nationality">Armenia</option> 
+                    <option name="nationality">Azerbaijan</option> 
+                    <option name="nationality">Ba Lan</option> 
+                    <option name="nationality">Bắc Macedonia</option> 
+                    <option name="nationality">Bahamas</option> 
+                    <option name="nationality">Bahrain</option> 
+                    <option name="nationality">Ba Lan</option>
+                    <option name="nationality">Banglades</option>
+                    <option name="nationality">Barbados</option>
+                    <option name="nationality">Belarus</option>
+                    <option name="nationality">Belize</option>
+                    <option name="nationality">Benin</option>
+                    <option name="nationality">Bhutan</option>
+                    <option name="nationality">Bỉ</option>
+                    <option name="nationality">Bờ Biển Ngà</option>
+                    <option name="nationality">Bồ Đào Nha</option>
+                    <option name="nationality">Boliavia</option>
+                    <option name="nationality">Bosnia và Herzegovina</option>
+                    <option name="nationality">Botswana</option>
+                    <option name="nationality">Brazil</option>
+                    <option name="nationality">Brunie</option>
+                    <option name="nationality">Bulgaria</option>
+                    <option name="nationality">Burkina Faso</option>
+                    <option name="nationality">Burundi</option>
+                    <option name="nationality">Các Tiểu Vương Quốc Ả Rập Thống Nhất</option>
+                    <option name="nationality">Cameroon</option>
+                    <option name="nationality">Campuchia</option>
+                    <option name="nationality">Canada</option>
+                    <option name="nationality">Cape Verde</option>
+                    <option name="nationality">Chad</option>
+                    <option name="nationality">Chile</option>
+                    <option name="nationality">Colombia</option>
+                    <option name="nationality">Cộng Hòa Congo</option>
+                    <option name="nationality">Cộng Hòa Dân Chủ Congo</option>
+                    <option name="nationality">Cộng Hòa Dominican</option>
+                    <option name="nationality">Colombia</option>
+                    <option name="nationality">Cộng Hòa Séc</option>
+                    <option name="nationality">Cộng Hòa Trung Phi</option>
+                    <option name="nationality">Costa Rica</option>
+                    <option name="nationality">Croatia</option>
+                    <option name="nationality">CuBa</option>
+                    <option name="nationality">Djibouti</option>
+                    <option name="nationality">Đài Loan</option>
+                    <option name="nationality">Đan Mạch</option>
+                    <option name="nationality">Đông Timor</option>
+                    <option name="nationality">Đức</option>
+                    <option name="nationality">Ecuafor</option>
+                    <option name="nationality">Eritrea</option>
+                    <option name="nationality">Estonia</option>
+                    <option name="nationality">Fiji</option>
+                    <option name="nationality">Gabon</option>
+                    <option name="nationality">Gambia</option>
+                    <option name="nationality">Georgia</option>
+                    <option name="nationality">Ghana</option>
+                    <option name="nationality">Grenada</option>
+                    <option name="nationality">Guatemala</option>
+                    <option name="nationality">Guinea</option>
+                    <option name="nationality">Guinea Xích Đạo</option>
+                    <option name="nationality">Guinea-Bissau</option>
+                    <option name="nationality">Guyana</option>
+                    <option name="nationality">Hà Lan</option>
+                    <option name="nationality">Hati</option>
+                    <option name="nationality">Hàn Quốc</option>
+                    <option name="nationality">Hoa Kì</option>
+                    <option name="nationality">Honduras</option>
+                    <option name="nationality">Hungary</option>
+                    <option name="nationality">Hy Lạp</option>
+                    <option name="nationality">IceLand</option>
+                    <option name="nationality">Indonesia</option>
+                    <option name="nationality">Iran</option>
+                    <option name="nationality">Iraq</option>
+                    <option name="nationality">Ireland</option>
+                    <option name="nationality">Israel</option>
+                    <option name="nationality">Jamaica</option>
+                    <option name="nationality">Jordan</option>
+                    <option name="nationality">Kazakhstan</option>
+                    <option name="nationality">Kenya</option>
+                    <option name="nationality">Kiribati</option>
+                    <option name="nationality">Kosovo</option>
+                    <option name="nationality">Kuwait</option>
+                    <option name="nationality">Lào</option>
+                    <option name="nationality">Latvia</option>
+                    <option name="nationality">Lesotho</option>
+                    <option name="nationality">LiBan</option>
+                    <option name="nationality">Liberia</option>
+                    <option name="nationality">Liechtenstein</option>
+                    <option name="nationality">Liên Bang Micronesia</option>
+                </select>
+            </div>
+            <p class="ThongBaoNational" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * XIN CHỌN QUỐC TỊCH CỦA BẠN !!!
+            </p>
+            <div class="Textarea">
+                <label><strong>Ghi Chú :</strong></label><br>
+                <textarea></textarea>
+            </div>
+            <p class="ThongBaoTextArea" style="color: red;display: none;margin-left: 15px;background-color: white;text-align: center;line-height: 30px;width: 450px;">
+                * GHI CHÚ ÍT HƠN 200 KÍ TỰ !!!
+            </p>
+            <div class="SignupFast">
+                <strong>SISNUP WITH :</strong>
+                <br>
+                &emsp;&emsp;<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>&emsp;&emsp;
+                <a href="#"><i class="fa fa-youtube fa-2x" ></i></a>&emsp;&emsp;
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>&emsp;&emsp;
+                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>&emsp;&emsp;
+                <a href="#"><i class="fa fa-instagram fa-2x"></i></i></a>&emsp;&emsp;
+            </div>
+            <button type="submit" class="button">ĐĂNG KÍ</button>
+            </Form>
+        </div>
+    </div>
+</div>
+<p class="CopyRight">&emsp;© 2020 OFFICAL SIGNUP FORM. All RIGHTS RESERVED&emsp; <br>&emsp;DESIGN FORM BY <a href="https://www.facebook.com/nhatphong.faker">Dương Tấn Nhật Phong - PS11601</a>&emsp;</p>
+</body>
+<script src="JS/JavaScriptCheckDangKi.js"></script>
+</html>

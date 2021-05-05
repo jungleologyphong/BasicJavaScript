@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/background001.jpg);
+    background-size: 100% 100%;
+}
+.menu{
+    background-image: url(images/backgroundnav.jpg);
+    height: 50px;
+    text-align: center;
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.menu>ul>li>a{
+    display: inline;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    padding: 0 100px;
+}
+.menu>ul>li>a:hover{
+    background-color:white;
+    color: green;
+    cursor: pointer;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    width: 15%;
+    margin: 20px;
+    margin-left: 11.5px;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+}
+#image1{
+    cursor: pointer;
+    opacity: 0.4;
+}
+#image2{
+    cursor: pointer;
+    opacity: 0.4;
+}
+#image3{
+    cursor: pointer;
+    opacity: 0.4;
+}
+#image4{
+    cursor: pointer;
+    opacity: 0.4;
+}
+#image5{
+    position: absolute;
+    opacity: 0.4;
+}
+#image6{
+    cursor: pointer;
+    opacity: 0.4;
+}
+#image1:hover{  
+    position: absolute;
+    bottom: 425px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
+#image2:hover{
+    position: absolute;
+    bottom: 425px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
+#image3:hover{
+    position: absolute;
+    bottom: 425px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
+#image4:hover{
+    position: absolute;
+    bottom: 425px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
+#image5:hover{
+    position: absolute;
+    bottom: 425px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
+#image6:hover{
+    position: absolute;
+    bottom: 425px;
+    right: 10px;
+    width: 500px;
+    height: 450px;
+    opacity: 5;
+}
